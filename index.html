@@ -1,0 +1,102 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <!-- CSS  -->
+        <link rel="stylesheet" href="index.css">
+        
+        <!-- google-fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        
+        <!-- scale to mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    </head>
+    <body>
+        <div class="container">
+            
+            
+            <header>
+                <h2 class="overlay">Jimmy's Diner</h2>
+                <p class="overlay">The best burgers and pizzas in town</p>
+                <!-- <img src="imgs/burger.jpg" alt="picture of two burgers a beer and fries"> -->
+            </header>
+            
+            
+            <section class="menu-item-container">
+                <div class="menu-item-card">
+                    <div class="items">
+                        <p class="emoji">🍕</p>
+                        <div class="menu-item-description">
+                            <p>Pizza</p>
+                            <p class="ingredients">peepperoni, mozarella, mushrooms</p>
+                            <p class="price">$14</p>
+                        </div>
+                    </div>
+                    <button class="add-item-btn">+</button>
+                </div>
+                <div class="menu-item-card">
+                    <div class="items">
+                        <p class="emoji">🍔</p>
+                        <div class="menu-item-description">
+                            <p>Burger</p>
+                            <p class="ingredients">beef, tomato, lettuce, bread</p>
+                            <p class="price">$12</p>
+                        </div>
+                    </div>
+                    <button class="add-item-btn">+</button>
+                </div>
+                <div class="menu-item-card">
+                    <div class="items">
+                        <p class="emoji">🍺</p>
+                        <div class="menu-item-description">
+                            <p>Beer</p>
+                            <p class="ingredients">water, yeast, wheat, hops</p>
+                            <p class="price">$12</p>
+                        </div>
+                    </div>
+                    <button class="add-item-btn">+</button>
+                </div>
+            </section>
+            
+            
+            <footer class="order-container">
+                <p>Your Order</p>
+                <div class="cart">                  
+                    <div class="cart-item">
+                        <p>Pizza</p>
+                        <button class="remove-item-btn">remove</button>
+                        <p>$14</p>
+                    </div>
+                    <div class="cart-item">
+                        <p>Burger</p>
+                        <button class="remove-item-btn">remove</button>
+                        <p>$12</p>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <p>Total Price</p>
+                    <p>$26</p>
+                </div>
+                <button class="complete-order-btn">Complete Order</button>
+            </footer>
+            
+            
+            <section class="payment-modal hidden">
+                <form>
+                    <div class="input-container">
+                        <h3>Enter card details</h3>
+                        <input type="text" placeholder="Enter your name" required>
+                        <input type="text" placeholder="Enter card number" required>
+                        <input type="text" placeholder="Enter CVV" required>
+                        <input class="pay-btn" type="submit" value="PAY">
+                    </div>
+                </form>
+            </section>
+            
+            
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
+
