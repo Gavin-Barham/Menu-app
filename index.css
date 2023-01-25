@@ -47,15 +47,14 @@ header p{
 /* Menu Section */
 .menu-item-container{
     width: 460px;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 .menu-item-card{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0 10px 0;
+    padding: 30px 0;
     border-bottom: 1px solid #BBB;
-    margin: 20px auto;
 }
 .menu-item-description{
     line-height: 16px;
@@ -106,6 +105,80 @@ header p{
     border-bottom: 1px solid #BBB;
     margin: 20px auto;
     padding-bottom: 16px;
+}
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 4px;
+}
+.remove-item-btn{
+    border: none;
+    background: white;
+    color: #BBB;
+    font-size: 10px;
+    padding: 3px;
+    margin: 0;
+    position: absolute;
+    left: 36px; 
+    bottom: 2px;
+}
+
+
+/* modal */
+.payment-modal{
+    border-radius: 4px;
+    width: 420px;
+    height: 420px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 2px 10px 10px 10px gray;
+    background-color: white;
+    
+}
+.input-container{
+    margin: auto;
+    width: 380px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+input{
+    padding: 20px 28px;
+}
+.pay-btn{
+    background-color: #16DB99;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bolder;
+    font-size: 24px;
+    margin-top: 24px; 
+}
+.hidden{
+    display: none;
+}
+.complete-order-btn{
+    border: none;
+    margin: 20px auto 10px auto;
+    background-color: #16DB99;
+    padding: 10px 186px;
+    color: white;
+    font-size: 12px;
+}
+.thank-you-card{
+    background-color: #ECFDF5;
+    color: #065F46;
 }
 .cart-item{
     display: flex;
